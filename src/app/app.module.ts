@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
 import { ChristianHomeComponentComponent } from './christian-home-component/christian-home-component.component';
 import { ChristianListComponentComponent } from './christian-list-component/christian-list-component.component';
+import { ChristianListServiceService } from './christian-list-service.service';
 
 @NgModule({
   imports: [
@@ -24,5 +25,6 @@ import { ChristianListComponentComponent } from './christian-list-component/chri
     ChristianListComponentComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [ChristianListServiceService],
 })
 export class AppModule {}
