@@ -8,11 +8,13 @@ import { RouterModule } from '@angular/router';
 import { ChristianHomeComponentComponent } from './christian-home-component/christian-home-component.component';
 import { ChristianListComponentComponent } from './christian-list-component/christian-list-component.component';
 import { ChristianListServiceService } from './christian-list-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'home', component: ChristianHomeComponentComponent },
       { path: 'list', component: ChristianListComponentComponent },
