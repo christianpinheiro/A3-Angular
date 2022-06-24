@@ -12,6 +12,4 @@ export class ChristianListComponentComponent {
   updateChristianList() {
     this.christianListService.update();
   }
-
-  ngOnInit() {}
 }
