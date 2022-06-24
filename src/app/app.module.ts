@@ -13,8 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'home', component: ChristianHomeComponentComponent },
       { path: 'list', component: ChristianListComponentComponent },
