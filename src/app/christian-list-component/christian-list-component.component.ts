@@ -6,10 +6,10 @@ import { ChristianListServiceService } from '../christian-list-service.service';
   templateUrl: './christian-list-component.component.html',
   styleUrls: ['./christian-list-component.component.css'],
 })
-export class ChristianListComponentComponent implements OnInit {
+export class ChristianListComponentComponent {
   constructor(public christianListService: ChristianListServiceService) {}
 
-  ngOnInit() {
+  updateChristianListRates() {
     this.christianListService.update();
   }
 }
