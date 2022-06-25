@@ -7,7 +7,9 @@ import { ChristianListServiceService } from '../christian-list-service.service';
   styleUrls: ['./christian-list-component.component.css'],
 })
 export class ChristianListComponentComponent {
-  constructor(public christianListService: ChristianListServiceService) {
-    this.christianListService.update;
+  constructor(public christianListService: ChristianListServiceService) {}
+
+  updateChristianListRates() {
+    this.christianListService.update();
   }
 }
