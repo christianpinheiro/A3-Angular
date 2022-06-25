@@ -1,4 +1,6 @@
 <div>
+  <h2>API:</h2>
+  {{ updateChristianListRates() }}
   <table class="table">
     <thead>
       <tr>
@@ -7,10 +9,10 @@
         <th>D2</th>
       </tr>
       <tr *ngFor="let rate of this.christianListService.list">
-        <td></td>
+        <td>{{ rate.created.rate_float }}</td>
+        <td>{{ rate.d1.updated }}</td>
+        <td>{{ rate.d2.updated }}</td>
       </tr>
     </thead>
-
-    
   </table>
 </div>
